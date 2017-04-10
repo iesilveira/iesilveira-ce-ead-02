@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title> 
+			AVAL. DE RESULTADOS 
+		</title>
+		<link rel="shortcut icon" href="https://image.freepik.com/icones-gratis/pilha-de-livros-de-tres_318-45543.jpg"/>
+		<style>
+		body {
+			margin: 0 auto;
+			width: 840px;
+			font-family: Calibri;
+		}
+		p {
+			text-align : center;
+		}
+		.botao {
+			text-align : center;
+		}
+		</style>
+	</head>
+	<body>
+		<h1 align='center'>
+		  AVALIAÇÃO DE RESULTADOS
+		</h1>
+		<br>
+		<form action='saida.php' method='POST'>
+			<p> 
+				NOME DO ALUNO: <input type='text' size='50' name='aluno' autofocus='true' required/>
+			</p>
+			<p> 
+				NOME DA DISCIPLINA: <input type='text' size='50' name='disciplina' required/>
+			</p>
+			<p> 
+				NOME DO CURSO: <input type='text' size='50' name='curso' required/>
+			</p>
+			<p> 
+				<i>LINK</i> PARA A LOGOMARCA DA FACULDADE: <input style='text-align:center;' type='url' size='75' name='img' placeholder='Exemplo: http://www.faculdadepromove.br/bh/arquivos_img/site/promove.png'/>
+			</p>
+			<p> 
+				NOTA VA1 (0-15): <input type='number' name='va1' min='0' max='15' maxlength='2' required/>
+			</p>
+			<p> 
+				NOTA VA2 (0-25): <input type='number' name='va2' min='0' max='25' maxlength='2' required/>
+			</p>
+			<p> 
+				NOTA VA3 (0-35): <input type='number' name='va3' min='0' max='35' maxlength='2' required/>
+			</p>
+			<p> 
+				NOTA DOS TRABALHOS (0-25): <input type='number' name='trabalhos' min='0' max='25' maxlength='2' required/>
+			</p>
+			<p> 
+				NOME DO PROFESSOR: <input type='text' size='50' name='professor' required/>
+			</p>
+			<p> 
+				NOME DO COORDENADOR: <input type='text' size='50' name='coordenador' required/>
+			</p>
+			<p> 
+				LADO: <input type='number' name='lado'/>
+			</p>
+			<p class='botao'>
+				<input type='submit' name='gerar' value='GERAR DECLARAÇÃO' style="width: 540px; height: 40px;">
+			</p>
+		</form>
+	</body>
+</html>
